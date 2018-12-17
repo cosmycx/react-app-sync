@@ -1,5 +1,6 @@
 # react-app-sync
 Share and sync code between create-react-apps
+using rsync, macOS, Linux
 
 sync: shared <-> cra1/src/shared
 sync: shared <-> cra2/src/shared
