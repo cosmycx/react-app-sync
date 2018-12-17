@@ -19,3 +19,10 @@ each can be own git repo: cra1, cra2, and shared.
 
 example:
 ```
+node sync.js export
+```
+syncs app/src/shared -> ./shared
+```
+node sync.js import
+```
+syncs ./shared -> app/src/shared
