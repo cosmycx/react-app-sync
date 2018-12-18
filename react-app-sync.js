@@ -1,13 +1,12 @@
 #!/usr/bin/env node
-
 const path = require('path')
-const dirname = __dirname
+const dirname = process.cwd()
 
 const action = process.argv[2],
       intSrcDir = process.argv[3] || 'shared',
       extAppDir = process.argv[4] || 'shared'
 
-const ACTION_EXPORT = 'in', ACTION_IMPORT = 'out'
+const ACTION_EXPORT = 'out', ACTION_IMPORT = 'in'
 
 if (action !== ACTION_EXPORT && action !== ACTION_IMPORT) {
   console.log('sync in/out parameter missing')
@@ -15,9 +14,9 @@ if (action !== ACTION_EXPORT && action !== ACTION_IMPORT) {
 }// .guard ACTION_EXPORT or ACTION_IMPORT
 
 const intPath = `${dirname}/src/${intSrcDir}/`
-console.log('internal folder:', `/src/${intSrcDir}/`)
+console.log('internal folder:', intPath)
 
-const extPath = path.join(__dirname, '..' , extAppDir)
+const extPath = `${path.join(dirname, '..' , extAppDir)}/`
 console.log('external folder:', extPath)
 
 const { spawn } = require('child_process')
@@ -31,7 +30,7 @@ switch (action) {
     rsync = spawn( 'rsync', [ '-avu', intPath, extPath] )
 }// .switch
 
-// rsync.stdout.on( 'data', data => console.log(`stdout: ${data}`) )
+rsync.stdout.on( 'data', data => console.log(`stdout: ${data}`) )
 
 rsync.stderr.on( 'data', data => console.log( `stderr: ${data}`) )
 
