@@ -4,9 +4,11 @@ Share and sync code between create-react-apps
 ```
 .
 └───shared
+
 └───cra1
     └───src
         └───shared
+
 └───cra2
     └───src
         └───shared
@@ -19,17 +21,13 @@ Share and sync code between create-react-apps
   },
 ```
 
-
-./src/shared -> ../shared
 ```
-react-app-sync out
+react-app-sync out // ./src/shared -> ../shared
 ```
 
-../shared -> ./src/shared
 ```
-react-app-sync out
+react-app-sync out // ../shared -> ./src/shared
 ```
-
 
 -each can be own git repo: cra1, cra2, and shared
 
