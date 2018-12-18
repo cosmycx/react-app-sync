@@ -10,7 +10,7 @@ const action = process.argv[2],
 const ACTION_EXPORT = 'in', ACTION_IMPORT = 'out'
 
 if (action !== ACTION_EXPORT && action !== ACTION_IMPORT) {
-  console.log('action parameter not available')
+  console.log('sync in/out parameter missing')
   process.exit(1)
 }// .guard ACTION_EXPORT or ACTION_IMPORT
 

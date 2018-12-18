@@ -21,6 +21,9 @@
   ],
   "author": "cosmycx",
   "license": "MIT",
+  "bin": {
+    "react-app-sync":"./react-app-sync.js"
+  },
   "bugs": {
     "url": "https://github.com/cosmycx/react-app-sync/issues"
   },
