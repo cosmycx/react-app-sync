@@ -1,6 +1,6 @@
 {
   "name": "react-app-sync",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sync a shared app src folder to an external folder for sharing components between react apps\"",
   "main": "react-app-sync.js",
   "scripts": {
