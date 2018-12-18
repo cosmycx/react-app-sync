@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const path = require('path')
 const dirname = __dirname
 
@@ -5,7 +7,7 @@ const action = process.argv[2],
       intSrcDir = process.argv[3] || 'shared',
       extAppDir = process.argv[4] || 'shared'
 
-const ACTION_EXPORT = 'export', ACTION_IMPORT = 'import'
+const ACTION_EXPORT = 'in', ACTION_IMPORT = 'out'
 
 if (action !== ACTION_EXPORT && action !== ACTION_IMPORT) {
   console.log('action parameter not available')

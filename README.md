@@ -22,10 +22,17 @@ each can be own git repo: cra1, cra2, and shared.
 
 example:
 ```
-node sync.js export
+react-app-sync in
 ```
 syncs app/src/shared -> ./shared
 ```
-node sync.js import
+react-app-sync out
 ```
 syncs ./shared -> app/src/shared
+
+```
+  "scripts": {
+    "sync-out": "react-app-sync out",
+    "sync-in": "react-app-sync in"
+  },
+```
