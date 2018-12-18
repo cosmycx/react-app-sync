@@ -1,0 +1,28 @@
+{
+  "name": "react-app-sync",
+  "version": "1.0.0",
+  "description": "Sync a shared app src folder to an external folder for sharing components between react apps\"",
+  "main": "react-app-sync.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cosmycx/react-app-sync.git"
+  },
+  "keywords": [
+    "cra",
+    "create-react-app",
+    "react",
+    "share",
+    "components",
+    "between",
+    "apps"
+  ],
+  "author": "cosmycx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cosmycx/react-app-sync/issues"
+  },
+  "homepage": "https://github.com/cosmycx/react-app-sync#readme"
+}
