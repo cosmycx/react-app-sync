@@ -26,7 +26,7 @@ react-app-sync out // ./src/shared -> ../shared
 ```
 
 ```
-react-app-sync out // ../shared -> ./src/shared
+react-app-sync in // ../shared -> ./src/shared
 ```
 
 -each can be own git repo: cra1, cra2, and shared
